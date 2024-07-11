@@ -2,13 +2,10 @@
 """
 This module defines a class `Square` with a private instance attribute `size`.
 """
-
-
 class Square:
     """
     This class defines a square with a private instance attribute `size`.
     """
-
     def __init__(self, size=0):
         """
         Initialize a new Square instance.
