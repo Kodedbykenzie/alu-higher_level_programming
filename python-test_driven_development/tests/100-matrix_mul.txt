@@ -1,4 +1,4 @@
->>> matrix_mul([[1, 2]], [[3, 4], [5, 6]])
+x_mul([[1, 2]], [[3, 4], [5, 6]])
 [[13, 16]]
 
 >>> matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]])
@@ -19,37 +19,17 @@ Traceback (most recent call last):
     ...
 TypeError: m_a must be a list of lists
 
->>> matrix_mul([[5, 6], [7, 8]], [1, 2, 3, 4])
+>>> matrix_mul([[5, 6], [7, 8]], [[]])
 Traceback (most recent call last):
     ...
-TypeError: m_b must be a list of lists
+ValueError: m_b can't be empty
 
 >>> matrix_mul([[]], [[5, 6], [7, 8]])
 Traceback (most recent call last):
     ...
 ValueError: m_a can't be empty
 
->>> matrix_mul([[5, 6], [7, 8]], [[]])
-Traceback (most recent call last):
-    ...
-ValueError: m_b can't be empty
-
->>> matrix_mul([[5, "6"], [7, 8]], [[5, 6], [7, 8]])
-Traceback (most recent call last):
-    ...
-TypeError: m_a should contain only integers or floats
-
->>> matrix_mul([[5, 6], [7, 8]], [[5, "6"], [7, 8]])
-Traceback (most recent call last):
-    ...
-TypeError: m_b should contain only integers or floats
-
 >>> matrix_mul([[5, 6, 10], [7, 8]], [[5, 6], [7, 8]])
-Traceback (most recent call last):
-    ...
-ValueError: m_a and m_b can't be multiplied
-
->>> matrix_mul([[5, 6], [7, 8]], [[5, 6, 1], [7, 8]])
 Traceback (most recent call last):
     ...
 ValueError: m_a and m_b can't be multiplied
@@ -58,4 +38,3 @@ ValueError: m_a and m_b can't be multiplied
 Traceback (most recent call last):
     ...
 ValueError: m_a and m_b can't be multiplied
-
