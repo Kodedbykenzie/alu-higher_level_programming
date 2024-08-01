@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """
 This module provides a function `matrix_mul` to multiply two matrices.
 
