@@ -1,5 +1,28 @@
-#!/usr/bin/python3
+"""
+This module provides a function `matrix_mul` to multiply two matrices.
+
+The matrices must be validated before performing multiplication. The function
+ensures that the matrices are lists of lists containing only integers or floats,
+that they are rectangular (all rows have the same size), and that the matrices
+can be multiplied based on their dimensions.
+"""
+
 def matrix_mul(m_a, m_b):
+    """
+    Multiplies two matrices m_a and m_b.
+
+    Args:
+        m_a (list of lists): First matrix to multiply.
+        m_b (list of lists): Second matrix to multiply.
+
+    Returns:
+        list of lists: The result of multiplying m_a by m_b.
+
+    Raises:
+        TypeError: If m_a or m_b is not a list, list of lists, or contains non-numeric types.
+        ValueError: If m_a or m_b is empty, or if the matrices cannot be multiplied.
+    """
+    
     # Validate m_a and m_b are lists
     if not isinstance(m_a, list):
         raise TypeError("m_a must be a list")
@@ -50,4 +73,3 @@ def matrix_mul(m_a, m_b):
         result.append(row)
     
     return result
-
