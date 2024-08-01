@@ -74,3 +74,8 @@ def matrix_mul(m_a, m_b):
         result.append(row)
     
     return result
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
+
